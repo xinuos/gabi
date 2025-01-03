@@ -303,6 +303,11 @@ but is not required.
     This hash table refers to the symbol table referenced by the ``DT_SYMTAB``
     element.
 
+    ``DT_HASH`` is normally mandatory. The psABI supplement is allowed
+    to override this requirement by providing an alternative hash
+    mechanism. In such cases, DT_SYMTABSZ, which is normally optional,
+    becomes mandatory.
+
 ``DT_STRTAB``
     This element holds the address of the string table,
     described in :ref:`String-Table`.
