@@ -628,6 +628,9 @@ This entry holds the following.
 Compressed Sections
 ===================
 
+The ``SHF_COMPRESSED`` section header flag indicates a section
+that has been compressed to save space in the object file.
+
 All relocations to a compressed section specify offsets to the
 uncompressed section data.  It is therefore necessary to decompress
 the section data before relocations can be applied.  Each compressed section
