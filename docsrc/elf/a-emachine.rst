@@ -2,6 +2,18 @@
 Appendix A: Assigned Machine Values
 ###################################
 
+The table below lists all assigned ``e_machine`` values.
+This list is updated as new values are assigned, without updating the
+document version number.
+
+To request assignment of an ``e_machine`` value for a new architecture,
+please email your request to registry@xinuos.com.
+Please include your contact information (preferably a company email
+address, not a free email provider), the name of the company, the name
+of the architecture with a brief description, your preferred ``EM_xxx``
+name, and a link (if available) to any public information about the
+architecture.
+
 .. table:: ``e_machine`` Values
 
    ======================== ============== ===============================================================================

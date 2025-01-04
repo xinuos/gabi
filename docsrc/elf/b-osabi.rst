@@ -2,7 +2,23 @@
 Appendix B: Assigned OSABI Values
 #################################
 
-.. table:: EI_OSABI Values
+The table below lists all assigned ``EI_OSABI`` values.
+This list is updated as new values are assigned, without updating the
+document version number.
+
+Values in the architecture-specific value range may be used
+for a specific ``e_machine`` value, without registration.
+It is advisable to coordinate with other potential users of
+that architecture to avoid conflicts.
+
+To request assignment of an ``EI_OSABI`` value for a new OSABI,
+please email your request to registry@xinuos.com.
+Please include your contact information (preferably a company email
+address, not a free email provider), the name of the company, the name
+of the operating system with a brief description, your preferred ``ELFOSABI_xxx``
+name, and a link (if available) to any public information about the OS.
+
+.. table:: ``EI_OSABI`` Values
 
    =======================  ===========  ===================================================
    Name                     Value        Meaning
