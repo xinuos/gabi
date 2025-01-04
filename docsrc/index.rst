@@ -2,7 +2,7 @@
 ELF Object File Format
 ######################
 
-.. rubric:: Version 4.3 DRAFT (2024)
+.. rubric:: Version 4.3 DRAFT (2025)
 
 This document describes the
 object file format, called ELF (Executable and Linking Format).
