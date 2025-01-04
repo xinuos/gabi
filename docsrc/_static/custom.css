@@ -31,9 +31,18 @@ figcaption span.caption-number {
     text-decoration: none;
 }
 
+div.admonition {
+    padding: 10px;
+}
+
 div.admonition p.admonition-title {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: bold;
     font-style: italic;
+}
+
+div.admonition p.admonition-title + p {
+    margin-top: 0.5em;
 }
 
 tt, code {
