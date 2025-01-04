@@ -56,6 +56,8 @@ table.docutils {
     -webkit-box-shadow: none;
     box-shadow: none;
     min-width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 table.docutils caption {
