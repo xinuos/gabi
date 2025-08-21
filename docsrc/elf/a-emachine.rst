@@ -244,4 +244,5 @@ architecture.
    ``EM_SIMA_MLA``          ``265``        SiMa MLA
    ``EM_BANG``              ``266``        Cambricon BANG
    ``EM_LOONGGPU``          ``267``        Loongson LoongGPU
+   ``EM_SW64``              ``268``        Wuxi Institute of Advanced Technology SW64
    ======================== ============== ===============================================================================
