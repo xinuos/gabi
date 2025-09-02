@@ -10,6 +10,13 @@ The table below lists all assigned ``EI_OSABI`` values.
 This list is updated as new values are assigned, without updating the
 document version number.
 
+.. only:: latex
+
+   For the most up-to-date list of values,
+   please refer to `gabi.xinuos.com`_.
+
+.. _gabi.xinuos.com: https://gabi.xinuos.com
+
 Values in the architecture-specific value range may be used
 for a specific ``e_machine`` value, without registration.
 It is advisable to coordinate with other potential users of

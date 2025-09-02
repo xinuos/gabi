@@ -14,6 +14,13 @@ The table below lists all assigned ``e_machine`` values.
 This list is updated as new values are assigned, without updating the
 document version number.
 
+.. only:: latex
+
+   For the most up-to-date list of values,
+   please refer to `gabi.xinuos.com`_.
+
+.. _gabi.xinuos.com: https://gabi.xinuos.com
+
 To request assignment of an ``e_machine`` value for a new architecture,
 please email your request to registry@xinuos.com.
 Please include your contact information (preferably a company email
@@ -244,4 +251,5 @@ architecture.
    ``EM_SIMA_MLA``          ``265``        SiMa MLA
    ``EM_BANG``              ``266``        Cambricon BANG
    ``EM_LOONGGPU``          ``267``        Loongson LoongGPU
+   ``EM_SW64``              ``268``        Wuxi Institute of Advanced Technology SW64
    ======================== ============== ===============================================================================

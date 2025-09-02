@@ -51,3 +51,10 @@ The SVR4 gABI and several other ABIs share ELF as a common object file format,
 and the official specification of the ELF object file format is
 published here. This specification replaces the material that was
 contained in Chapters 4 and 5 of the SVR4 gABI document.
+
+.. only:: latex
+
+   The most up-to-date version of this document
+   is available at `gabi.xinuos.com`_.
+
+.. _gabi.xinuos.com: https://gabi.xinuos.com
