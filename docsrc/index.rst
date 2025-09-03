@@ -13,6 +13,10 @@ pertain to building programs.
 Chapters 7 and 8 describe additional structures that are
 necessary to execute a program.
 
+.. only:: html
+
+   This document is also available in `PDF format`_.
+
 .. toctree::
    :maxdepth: 2
 
@@ -47,3 +51,5 @@ necessary to execute a program.
    * :ref:`genindex`
    * :ref:`modindex`
    * :ref:`search`
+
+.. _PDF format: elf.pdf
