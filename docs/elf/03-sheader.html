@@ -268,13 +268,12 @@ may have a non-zero size, but it occupies no space in the file.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">sh_link</span></code></dt><dd><p>This member holds a section header table index link,
 whose interpretation depends on the section type.
-A table below
-describes the values.</p>
+(See <a class="reference internal" href="#shlink-shinfo-fields"><span class="std std-numref">Section 3.5, The sh_link and sh_info Fields</span></a>.)</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">sh_info</span></code></dt><dd><p>This member holds extra information,
 whose interpretation depends on the section type.
-A table below
-describes the values.  If the <code class="docutils literal notranslate"><span class="pre">sh_flags</span></code> field for this
+(See <a class="reference internal" href="#shlink-shinfo-fields"><span class="std std-numref">Section 3.5, The sh_link and sh_info Fields</span></a>.)
+If the <code class="docutils literal notranslate"><span class="pre">sh_flags</span></code> field for this
 section header includes the attribute <code class="docutils literal notranslate"><span class="pre">SHF_INFO_LINK</span></code>, then this member represents a section header table index.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">sh_addralign</span></code></dt><dd><p>Some sections have address alignment constraints.

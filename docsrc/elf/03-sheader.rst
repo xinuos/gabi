@@ -215,14 +215,13 @@ A section header has the following structure.
 ``sh_link``
     This member holds a section header table index link,
     whose interpretation depends on the section type.
-    A table below
-    describes the values.
+    (See :numref:`Section {number}, {name} <shlink-shinfo-fields>`.)
 
 ``sh_info``
     This member holds extra information,
     whose interpretation depends on the section type.
-    A table below
-    describes the values.  If the ``sh_flags`` field for this
+    (See :numref:`Section {number}, {name} <shlink-shinfo-fields>`.)
+    If the ``sh_flags`` field for this
     section header includes the attribute ``SHF_INFO_LINK``, then this member represents a section header table index.
 
 ``sh_addralign``
