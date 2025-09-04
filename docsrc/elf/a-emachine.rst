@@ -252,4 +252,5 @@ architecture.
    ``EM_BANG``              ``266``        Cambricon BANG
    ``EM_LOONGGPU``          ``267``        Loongson LoongGPU
    ``EM_SW64``              ``268``        Wuxi Institute of Advanced Technology SW64
+   ``EM_AIECTRLCODE``       ``269``        AMD/Xilinx AIEngine ctrlcode
    ======================== ============== ===============================================================================
