@@ -133,6 +133,7 @@ Version 4.2 (Published 2025)
 Version 4.3 (DRAFT)
 
 * Added extra requirements for ``SHF_LINK_ORDER`` flag.
+* For ``SHT_NOBITS`` sections, the ``sh_offset`` field is not used.
 * Added relative relocation table (``Elf32_Relr`` and ``Elf64_Relr``).
 * Changed the symbol visibility attribute to use the lower 3 bits
   of ``st_other`` (instead of 2 bits).

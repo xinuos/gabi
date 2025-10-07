@@ -196,13 +196,11 @@ A section header has the following structure.
     Otherwise, the member contains 0.
 
 ``sh_offset``
-    This member’s value gives the byte offset from the beginning of the file
-    to the first byte in the section.
-    One section type, ``SHT_NOBITS``
-    described
-    below,
-    occupies no space in the file, and its
-    ``sh_offset`` member locates the conceptual placement in the file.
+    This member’s value gives the byte offset from the
+    beginning of the file to the first byte in the section.
+    One section type, ``SHT_NOBITS`` described below,
+    occupies no space in the file, and its ``sh_offset``
+    member has no meaning and is not used.
 
 ``sh_size``
     This member gives the section’s size in bytes.
@@ -333,10 +331,9 @@ A section header’s ``sh_type`` member specifies the section’s semantics.
 
 ``SHT_NOBITS``
     A section of this type occupies no space in the file but
-    otherwise resembles
-    ``SHT_PROGBITS``.
-    Although this section contains no bytes, the ``sh_offset``
-    member contains the conceptual file offset.
+    otherwise resembles ``SHT_PROGBITS``. Because this
+    section contains no bytes, the ``sh_offset`` member has
+    no meaning and is not used.
 
 ``SHT_REL``
     The section holds relocation entries
