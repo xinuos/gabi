@@ -144,3 +144,6 @@ Version 4.3 (DRAFT)
 * Changed ``SHF_COMPRESSED`` to allow with ``SHF_ALLOC`` sections
   in ``ET_REL`` objects.
 * Added ``ELFCOMPRESS_ZSTD`` compression algorithm.
+* Changed types used in the hashing function in the
+  "Dynamic Linking" chapter from ``unsigned long`` to
+  ``Elf32_Word``.
