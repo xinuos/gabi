@@ -253,4 +253,7 @@ architecture.
    ``EM_LOONGGPU``          ``267``        Loongson LoongGPU
    ``EM_SW64``              ``268``        Wuxi Institute of Advanced Technology SW64
    ``EM_AIECTRLCODE``       ``269``        AMD/Xilinx AIEngine ctrlcode
+   ``EM_PPU``               ``270``        T-Head PPU
+   ``EM_LST``               ``271``        Lisuan Technology LST
+   ``EM_CHILI``             ``272``        OpenAI Chili architecture
    ======================== ============== ===============================================================================
