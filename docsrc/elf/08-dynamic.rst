@@ -837,7 +837,8 @@ Hash Table
 
 A hash table of ``Elf32_Word``
 objects supports symbol table access.  The same table
-layout is used for both the 32-bit and 64-bit file class.
+layout and hashing function is used for both the 32-bit
+and 64-bit file class.
 Labels appear below
 to help explain the hash table organization,
 but they are not part of the specification.
@@ -874,10 +875,10 @@ holds the desired name or the ``chain`` entry contains the value
 .. code-block:: c
    :caption: Hashing Function
 
-   unsigned long
+   Elf32_Word
    elf_hash(const unsigned char *name)
    {
-       unsigned long   h = 0, g;
+       Elf32_Word h = 0, g;
        while (*name)
        {
            h = (h << 4) + *name++;

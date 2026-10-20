@@ -251,13 +251,11 @@ this member gives the address at which the section’s first
 byte should reside.
 Otherwise, the member contains 0.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">sh_offset</span></code></dt><dd><p>This member’s value gives the byte offset from the beginning of the file
-to the first byte in the section.
-One section type, <code class="docutils literal notranslate"><span class="pre">SHT_NOBITS</span></code>
-described
-below,
-occupies no space in the file, and its
-<code class="docutils literal notranslate"><span class="pre">sh_offset</span></code> member locates the conceptual placement in the file.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">sh_offset</span></code></dt><dd><p>This member’s value gives the byte offset from the
+beginning of the file to the first byte in the section.
+One section type, <code class="docutils literal notranslate"><span class="pre">SHT_NOBITS</span></code> described below,
+occupies no space in the file, and its <code class="docutils literal notranslate"><span class="pre">sh_offset</span></code>
+member has no meaning and is not used.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">sh_size</span></code></dt><dd><p>This member gives the section’s size in bytes.
 Unless the section type is
@@ -424,10 +422,9 @@ See <a class="reference internal" href="08-dynamic.html#dynamic-section"><span c
 See <a class="reference internal" href="07-pheader.html#note-sections"><span class="std std-numref">Section 7.6, Note Sections</span></a>, for details.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">SHT_NOBITS</span></code></dt><dd><p>A section of this type occupies no space in the file but
-otherwise resembles
-<code class="docutils literal notranslate"><span class="pre">SHT_PROGBITS</span></code>.
-Although this section contains no bytes, the <code class="docutils literal notranslate"><span class="pre">sh_offset</span></code>
-member contains the conceptual file offset.</p>
+otherwise resembles <code class="docutils literal notranslate"><span class="pre">SHT_PROGBITS</span></code>. Because this
+section contains no bytes, the <code class="docutils literal notranslate"><span class="pre">sh_offset</span></code> member has
+no meaning and is not used.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">SHT_REL</span></code></dt><dd><p>The section holds relocation entries
 without explicit addends, such as type

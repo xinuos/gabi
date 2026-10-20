@@ -1036,7 +1036,8 @@ mechanisms.</p>
 <span id="id6"></span><h2><span class="section-number">8.5. </span>Hash Table<a class="headerlink" href="#hash-table" title="Link to this heading">¶</a></h2>
 <p>A hash table of <code class="docutils literal notranslate"><span class="pre">Elf32_Word</span></code>
 objects supports symbol table access.  The same table
-layout is used for both the 32-bit and 64-bit file class.
+layout and hashing function is used for both the 32-bit
+and 64-bit file class.
 Labels appear below
 to help explain the hash table organization,
 but they are not part of the specification.</p>
@@ -1070,10 +1071,10 @@ holds the desired name or the <code class="docutils literal notranslate"><span c
 <code class="docutils literal notranslate"><span class="pre">STN_UNDEF</span></code>.</p>
 <div class="literal-block-wrapper docutils container" id="id12">
 <div class="code-block-caption"><span class="caption-number">Listing 8.2 </span><span class="caption-text">Hashing Function</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">Elf32_Word</span>
 <span class="nf">elf_hash</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w">   </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">g</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">g</span><span class="p">;</span>
 <span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">name</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="o">++</span><span class="p">;</span>
