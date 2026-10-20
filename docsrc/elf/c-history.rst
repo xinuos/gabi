@@ -137,7 +137,7 @@ Version 4.3 (DRAFT)
 * Added relative relocation table (``Elf32_Relr`` and ``Elf64_Relr``).
 * Changed the symbol visibility attribute to use the lower 3 bits
   of ``st_other`` (instead of 2 bits).
-* Added `STV_EXPORTED`, `STV_SINGLETON`, and `STV_ELIMINATE`
+* Added ``STV_EXPORTED``, ``STV_SINGLETON``, and ``STV_ELIMINATE``
   visibility flags.
 * Added ``DT_SYMTABSZ`` entry, and made ``DT_HASH`` optional if
   ``DT_SYMTABSZ`` is provided.
