@@ -124,11 +124,13 @@ Fifteenth Draft (Published 23 July 2015)
   allow usage with any symbol table section.
 * Added ``DT_SYMTAB_SHNDX`` to the Dynamic Array Tags.
 
-Version 4.2 (Published 2025)
+`Version 4.2`_ (Published 2025)
 
 * Converted to ReStructuredText.
 * ELF specification is now separate from the gABI document.
 * Removed empty placeholders for psABI sections.
+
+.. _`Version 4.2`: https://gabi.xinuos.com/v42/index.html
 
 Version 4.3 (DRAFT)
 
