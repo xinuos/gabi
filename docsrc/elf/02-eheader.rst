@@ -246,14 +246,14 @@ These indexes access bytes that hold the following values.
 
     .. table:: ELF Magic Numbers
 
-       ===========  =========  ====================
-       Name         Value      Position
-       ===========  =========  ====================
-       ``ELFMAG0``  ``0x7f``   ``e_ident[EI_MAG0]``
-       ``ELFMAG1``  ``’E’``    ``e_ident[EI_MAG1]``
-       ``ELFMAG2``  ``’L’``    ``e_ident[EI_MAG2]``
-       ``ELFMAG3``  ``’F’``    ``e_ident[EI_MAG3]``
-       ===========  =========  ====================
+       ===========  ==============  ====================
+       Name         Value           Position
+       ===========  ==============  ====================
+       ``ELFMAG0``  ``0x7f``        ``e_ident[EI_MAG0]``
+       ``ELFMAG1``  ``0x45 (’E’)``    ``e_ident[EI_MAG1]``
+       ``ELFMAG2``  ``0x4C (’L’)``    ``e_ident[EI_MAG2]``
+       ``ELFMAG3``  ``0x46 (’F’)``    ``e_ident[EI_MAG3]``
+       ===========  ==============  ====================
 
 ``EI_CLASS``
     The next byte, ``e_ident[EI_CLASS]``, identifies the
